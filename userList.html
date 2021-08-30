@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"> <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt=""> Kafene
+        </div>
+        <div id="links"> <span id="order">Orders</span> <span id="product">Products</span> <span id="user">Users</span>
+        </div>
+        <div id="logout" style="position: absolute;
+        right: 30px; cursor: pointer;">log out</div>
+    </header>
+    <section style="margin: 0px 120px;">
+        <article id="form">
+            <h1>Users</h1>
+            <div>
+                <div id="search-box"><input id="search-input" type="search" placeholder="Search by Name"> </div>
+                <button id="btn">reset
+                </button>
+            </div>
+        </article>
+        <article class="data" style="width:100%; margin-top: 50px;">
+            <table id="tab"></table>
+            <table  id="table"">
+                <tr>
+                  <th>ID</th>
+                  <th>User Avatar</th>
+                  <th>Full Name</th>
+                  <th>DoB</th>
+                  <th>Gender</th>
+                  <th>Current Location</th>
+                </tr>
+                <tr>
+                
+                </tr>
+        </article>
+    </section>
+    <script src="./fun.js"></script>
+    <script src="./userList.js"></script>
+</body>
+
+</html>

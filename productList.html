@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"> <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt=""> Kafene
+        </div>
+        <div id="links"> <span id="order">Orders</span> <span id="product">Products</span> <span id="user">Users</span>
+        </div>
+        </div>
+        <div id="logout" style="position: absolute;
+        right: 30px; cursor: pointer;">log out</div>
+    </header>
+    <section style="display: flex;">
+        <article class="filter">
+            <h1>Products</h1>
+            <h3>Fliters</h3>
+            <div id="row-counter"></div>
+            <div><input id="expire" type="checkbox" checked="" >Expired</div>
+            <div> <input id="stock" type="checkbox"  checked="">Low Stock</div>
+        </article>
+        <article class="data" style="margin: 135px 0px;">
+            <table class="table">
+                <tr>
+                  <th>ID</th>
+                  <th>Product Name</th>
+                  <th>Product Brand</th>
+                  <th>Expiry Date</th>
+                  <th>Unit Price</th>
+                  <th>Stock</th>
+                </tr>
+                <tr>
+                
+                </tr>
+                <tbody id="product-rows">
+                </table>
+        </article>
+
+    </section>
+    <script src="./fun.js"></script>
+    <script src="./productList.js"></script>
+</body>
+
+</html>
