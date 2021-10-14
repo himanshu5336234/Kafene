@@ -1,14 +1,13 @@
-$(document).ready(function () {
+$(document).ready(function ()
+ {
 var info =localStorage.getItem("isLoggedIn")
 if(info==="true"){
   location.replace("orderList.html")
 }
-
-  
  
   var input1 = $("#username")
   var input2 = $("#password")
-   var submit=$("#submit")
+  var submit=$("#submit")
 
 
 

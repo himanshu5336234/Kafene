@@ -13,7 +13,7 @@ $(document).ready(function(){
     
     });
     $("#logout").click(function(){
-        console.log("Cwvr");
+
         localStorage.setItem("isLoggedIn",false)
         location.replace("index.html")
     })

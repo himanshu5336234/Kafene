@@ -12,19 +12,19 @@ $(document).ready(function () {
   $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users", function (userData) {
     for (var i = 0; i < userData.length; i++) {
       var row = $("<tr>").attr("class", "target")
-      var column1 = $("<td>").html(userData[i].id);
-      column1.attr("class", "gray")
-      var column2 = $("<td>")
+      var C1 = $("<td>").html(userData[i].id);
+      C1.attr("class", "gray")
+      var C2 = $("<td>")
       var im = $("<img>").attr({ src: userData[i].profilePic })
-      column2.append(im)
-      var column3 = $("<td>").html(userData[i].fullName);
-      column3.attr("class", "fullname")
-      column3.attr("class", "gray")
-      var column4 = $("<td>").html(userData[i].dob);
-      var column5 = $("<td>").html(userData[i].gender);
-      var column6 = $("<td>").html(userData[i].currentCity + "," + userData[i].currentCountry);
-      column6.attr("class", "gray")
-      row.append(column1, column2, column3, column4, column5, column6);
+      C2.append(im)
+      var C3 = $("<td>").html(userData[i].fullName);
+      C3.attr("class", "fullname")
+      C3.attr("class", "gray")
+      var C4 = $("<td>").html(userData[i].dob);
+      var C5 = $("<td>").html(userData[i].gender);
+      var C6 = $("<td>").html(userData[i].currentCity + "," + userData[i].currentCountry);
+      C6.attr("class", "gray")
+      row.append(C1, C2, C3, C4, C5, C6);
       $("#table").append(row)
     }
 
@@ -38,28 +38,28 @@ $(document).ready(function () {
   $("#search-input").on("keypress", function () {
     if (event.keyCode === 13) {
       value = $("#search-input").val().toUpperCase();
-      
+      $("#tab").empty()
       $("#table").addClass("hide")
    
-      if (value.length < 2) {
-        alert("DCFsvefrv")
+      if (value.length <= 2) {
+        alert(" enter more then two value")
       } else {
         $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users?fullName=" + value, function (userData) {
           for (var i = 0; i < userData.length; i++) {
             var row = $("<tr>").attr("class", "target")
-            var column1 = $("<td>").html(userData[i].id);
-            column1.attr("class", "gray")
-            var column2 = $("<td>")
+            var C1 = $("<td>").html(userData[i].id);
+            C1.attr("class", "gray")
+            var C2 = $("<td>")
             var im = $("<img>").attr({ src: userData[i].profilePic })
-            column2.append(im)
-            var column3 = $("<td>").html(userData[i].fullName);
-            column3.attr("class", "fullname")
-            column3.attr("class", "gray")
-            var column4 = $("<td>").html(userData[i].dob);
-            var column5 = $("<td>").html(userData[i].gender);
-            var column6 = $("<td>").html(userData[i].currentCity + "," + userData[i].currentCountry);
-            column6.attr("class", "gray")
-            row.append(column1, column2, column3, column4, column5, column6);
+            C2.append(im)
+            var C3 = $("<td>").html(userData[i].fullName);
+            C3.attr("class", "fullname")
+            C3.attr("class", "gray")
+            var C4 = $("<td>").html(userData[i].dob);
+            var C5 = $("<td>").html(userData[i].gender);
+            var C6 = $("<td>").html(userData[i].currentCity + "," + userData[i].currentCountry);
+            C6.attr("class", "gray")
+            row.append(C1, C2, C3, C4, C5, C6);
             $("#tab").append(row)
           }
 

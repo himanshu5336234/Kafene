@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>order</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div id="logo"> <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt=""> Kafene</div>
-        <div id="links"> <span id="order">Orders</span> <span id="product">Products</span> <span id="user">Users</span></div>
+        <div id="links"> 
+            <div id="order">Orders</div> 
+            <div id="product">Products</div> 
+            <div id="user">Users</div></div>
         </div>
         <div id="logout" style="position: absolute;
         cursor: pointer;
@@ -21,15 +24,15 @@
     <article class="filter">
         <h1>order</h1>
         <h3>Fliters</h3>
-        <div  id="row-counter">count:100</div>
+        <div  id="counter">count:</div>
         <div><input id="new" type="checkbox" checked="">New</div>
-        <div> <input id="packed"type="checkbox" name="Packed"  checked="">Packed</div>
-        <div><input id="transit"type="checkbox" name="Intransit" checked="" >InTransit</div>
-        <div><input id="delivered"type="checkbox" name="Delivered"  checked="">Deliverd</div>
+        <div> <input id="packed"type="checkbox" checked="">Packed</div>
+        <div><input id="Intransit"type="checkbox"  checked="" >Intransit</div>
+        <div><input id="delivered"type="checkbox" checked="">Deliverd</div>
     </article>
     
     <article class="data" style="margin: 135px 0px;">
-        <table class="table">
+        <table class="tab">
             <tr>
               <th>ID</th>
               <th>Customer</th>
@@ -37,14 +40,12 @@
               <th>Amount</th>
               <th>Status</th>
             </tr>
-            <tr>
-            
-            </tr>
+           
             </table>
             
     </article>
 </section>
-    <script src="./orderList.js"></script>
+    <script src="./j.js"></script>
     <script src="./fun.js"></script>
 </body>
 </html>
